@@ -2,7 +2,6 @@ import express from "express";
 import expressLayouts from "express-ejs-layouts";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 // EJS configuration
 app.set("view engine", "ejs");
@@ -35,9 +34,5 @@ app.get("/about", (req, res) => {
 });
 */
 
-
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
 
 export default app;
